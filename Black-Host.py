@@ -336,8 +336,8 @@ else:
 ch=int(input('You Want\n1-- Full Info [Must Login]\n2-- Not Full Info [Without Login] : '))
 if ch > 0 < 3:
     if ch==1:
-        us=str(input('username : '))
-        pa=str(input('password : '))
+        us=str(input('Your username : '))
+        pa=str(input('Your password : '))
         cookies=login(us,pa,token)
         tokn=cookies['csrftoken']
         r=getinfo(1,username,token,cookies,tokn)
